@@ -22,6 +22,7 @@ Then("deve retornar status 200 e o nome da lista", () => {
     const nomeLista = response.body.data.list.name;
 
     cy.log(`Nome da lista: ${nomeLista}`);
+    console.log("Nome da lista:", nomeLista);
 
     expect(nomeLista).to.eq("Professional");
 
